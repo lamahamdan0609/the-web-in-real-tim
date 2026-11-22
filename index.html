@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly | Live Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-container">
+
+        <header>
+            <h1>Weatherly.</h1>
+            <p>Your world, in real time.</p>
+        </header>
+
+        <section class="search-section">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter a city..."
+            >
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <p id="message">Search for a city to discover its weather.</p>
+
+        <section class="weather-card">
+
+            <h2 id="cityName">--</h2>
+            <p id="countryName">Search for a location</p>
+
+            <div id="weatherIcon">🌤️</div>
+
+            <h1 id="temperature">--°</h1>
+            <h3 id="weatherDescription">Waiting for data...</h3>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <h3 id="feelsLike">--°</h3>
+                </div>
+
+            </div>
+
+            <p id="updated">Live weather data will appear here.</p>
+
+        </section>
+
+        <footer>
+            <p>Powered by Open-Meteo API | Live Weather Experience</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
